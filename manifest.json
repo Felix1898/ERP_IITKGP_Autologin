@@ -1,0 +1,27 @@
+{
+
+	"name": "Auto ERP Logger",
+	"version": "1.1.1",
+	"description": "to login- save details and click user space in ERP",
+	"content_scripts": [
+	{
+		"matches": ["https://erp.iitkgp.ernet.in/SSOAdministration*"],
+		"js": ["jquery-1.11.1.min.js", "my-script.js"]
+		}],
+     "browser_action" : {
+	"default_popup": "options.html"
+	},
+	"permissions":[
+		"storage","tabs",
+        "http://*/*",
+        "https://*/*"
+		
+		],
+	"background":{
+		"scripts": ["background.js"]
+		},
+		"icons" : {
+		"128" : "MaShar.png"
+		},
+	"manifest_version": 2
+}
