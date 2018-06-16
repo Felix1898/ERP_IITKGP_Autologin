@@ -5,7 +5,7 @@
 	"description": "to login- save details and click user space in ERP",
 	"content_scripts": [
 	{
-		"matches": ["https://erp.iitkgp.ernet.in/SSOAdministration*"],
+		"matches": ["https://erp.iitkgp.ac.in/SSOAdministration*"],
 		"js": ["jquery-1.11.1.min.js", "my-script.js"]
 		}],
      "browser_action" : {
